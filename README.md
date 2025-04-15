@@ -1,5 +1,20 @@
 # Vulnerable C Demo: Custom Stack Canary
 
+## Future Work
+
+1. **Explore Other Vulnerability Types and Mitigation Techniques**
+   - **Integer Overflows/Underflows:** Demonstrating potential pitfalls with arithmetic operations.
+   - **Format String Vulnerabilities:** Examples and safe coding practices.
+   - **Use-After-Free/Double Free:** Understanding dynamic memory management pitfalls.
+   - **Race Conditions:** Investigating concurrency issues in C programming.
+   
+2. **Investigate Modern Memory Safety Mechanisms**
+   - **Address Sanitizer (ASan):** Using ASan to detect and debug memory issues.
+   - **Memory Safe Languages:** Exploring secure alternatives like Rust.
+   - **Control Flow Integrity (CFI):** Researching compiler and hardware-level security features.
+   - **Hardware-based Protections:** Examining features such as the NX bit and DEP.
+
+
 ## Overview
 This project demonstrates a simple vulnerability in C programming—the buffer overflow—and shows how a custom stack canary can be used to detect an attack. It is designed for educational purposes.
 
@@ -21,3 +36,5 @@ This project demonstrates a simple vulnerability in C programming—the buffer o
 To compile the program using GCC without the built-in stack protector:
 ```bash
 gcc -fno-stack-protector -o stack_canary_demo stack_canary_demo.c
+
+
